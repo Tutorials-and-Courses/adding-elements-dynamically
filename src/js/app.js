@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	button.addEventListener('click', () => {
 		for (let i = 0; i < 5; i++) {
 			const article = document.createElement('article');
+			article.classList.add('message');
 			const articleContent = document.createTextNode('Some cool text in the article');
 			article.appendChild(articleContent);
 			document.body.append(article);
